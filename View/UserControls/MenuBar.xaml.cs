@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MagicCalculator
+namespace MagicCalculator.View.UserControls
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für MenuBar.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MenuBar : UserControl
     {
-        public MainWindow()
+        public MenuBar()
         {
             InitializeComponent();
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }
