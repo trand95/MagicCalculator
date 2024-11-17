@@ -36,28 +36,28 @@
                 <RowDefinition Height="*"/>
 
             </Grid.RowDefinitions>
-            
-            <Button Grid.Row="5" Grid.Column="3"  Content="=" FontSize="40"/>
-            <Button Grid.Row="4" Grid.Column="3"  Content="+" FontSize="40"/>
-            <Button Grid.Row="3" Grid.Column="3"  Content="-" FontSize="40"/>
-            <Button Grid.Row="2" Grid.Column="3"  Content="x" FontSize="40"/>
-            <Button Grid.Row="1" Grid.Column="3"  Content="/" FontSize="40"/>
-            <Button Grid.Row="0" Grid.Column="3"  Content="DEL" FontSize="30"/>
 
-            <Button Grid.Row="5" Grid.Column="2"  Content="." FontSize="40"/>
-            <Button Grid.Row="4" Grid.Column="2"  Content="9" FontSize="40"/>
-            <Button Grid.Row="3" Grid.Column="2"  Content="6" FontSize="40"/>
-            <Button Grid.Row="2" Grid.Column="2"  Content="3" FontSize="40"/>
+            <Button Click="btn_equal_Click" x:Name="btn_equal" Grid.Row="5" Grid.Column="3"  Content="=" FontSize="40"/>
+            <Button Click="btn_plus_Click"  x:Name="btn_plus" Grid.Row="4" Grid.Column="3"  Content="+" FontSize="40"/>
+            <Button Click="btn_sub_Click"  x:Name="btn_sub" Grid.Row="3" Grid.Column="3"  Content="-" FontSize="40"/>
+            <Button Click="btn_mul_Click" x:Name="btn_mul" Grid.Row="2" Grid.Column="3"  Content="x" FontSize="40"/>
+            <Button Click="btn_div_Click" x:Name="btn_div" Grid.Row="1" Grid.Column="3"  Content="/" FontSize="40"/>
+            <Button Click="btn_del_Click" x:Name="btn_del" Grid.Row="0" Grid.Column="3"  Content="DEL" FontSize="30"/>
 
-            <Button Grid.Row="5" Grid.Column="1"  Content="0" FontSize="40"/>
-            <Button Grid.Row="4" Grid.Column="1"  Content="8" FontSize="40"/>
-            <Button Grid.Row="3" Grid.Column="1"  Content="5" FontSize="40"/>
-            <Button Grid.Row="2" Grid.Column="1"  Content="2" FontSize="40"/>
+            <Button Click="Button_Click" x:Name="btn_comma" Grid.Row="5" Grid.Column="2"  Content="." FontSize="40"/>
+            <Button Click="btn_num_9_Click" x:Name="btn_num_9" Grid.Row="4" Grid.Column="2"  Content="9" FontSize="40"/>
+            <Button Click="btn_num_6_Click" x:Name="btn_num_6" Grid.Row="3" Grid.Column="2"  Content="6" FontSize="40"/>
+            <Button Click="btn_num_3_Click" x:Name="btn_num_3" Grid.Row="2" Grid.Column="2"  Content="3" FontSize="40"/>
 
-            <Button Grid.Row="5" Grid.Column="0"  Content="+/-" FontSize="30"/>
-            <Button Grid.Row="4" Grid.Column="0"  Content="7" FontSize="40"/>
-            <Button Grid.Row="3" Grid.Column="0"  Content="4" FontSize="40"/>
-            <Button Grid.Row="2" Grid.Column="0"  Content="1" FontSize="40"/>
+            <Button Click="btn_num_0_Click" x:Name="btn_num_0" Grid.Row="5" Grid.Column="1"  Content="0" FontSize="40"/>
+            <Button Click="btn_num_8_Click" x:Name="btn_num_8" Grid.Row="4" Grid.Column="1"  Content="8" FontSize="40"/>
+            <Button Click="btn_num_5_Click" x:Name="btn_num_5" Grid.Row="3" Grid.Column="1"  Content="5" FontSize="40"/>
+            <Button Click="btn_num_2_Click" x:Name="btn_num_2" Grid.Row="2" Grid.Column="1"  Content="2" FontSize="40"/>
+
+            <Button Click="btn_num_vorzeichen_Click" x:Name="btn_num_vorzeichen" Grid.Row="5" Grid.Column="0"  Content="+/-" FontSize="30"/>
+            <Button Click="btn_num_7_Click" x:Name="btn_num_7" Grid.Row="4" Grid.Column="0"  Content="7" FontSize="40"/>
+            <Button Click="btn_num_4_Click" x:Name="btn_num_4" Grid.Row="3" Grid.Column="0"  Content="4" FontSize="40"/>
+            <Button Click="btn_num_1_Click" x:Name="btn_num_1" Grid.Row="2" Grid.Column="0"  Content="1" FontSize="40"/>
 
         </Grid>
     </Grid>
