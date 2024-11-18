@@ -9,18 +9,27 @@
         Title="MainWindow" MinHeight="550" MinWidth="350">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="171*"/>
+            <ColumnDefinition Width="179*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
 
-        <userControls:MenuBar/>
+        <userControls:MenuBar Grid.ColumnSpan="2"/>
 
-        <Grid Grid.Row="1" Background="Goldenrod">
-            <TextBox x:Name="txtCalculation" TextAlignment="Right" HorizontalAlignment="Stretch"   FontSize="40" Margin="10" Background="Transparent" TextChanged="txtCalculation_TextChanged" ></TextBox>
+        <Grid Grid.Row="1"  Background="Goldenrod" Grid.ColumnSpan="2">
+            <TextBlock x:Name="txtHistory" TextAlignment="Right"  HorizontalAlignment="Stretch" FontSize="20" Margin="2" Background="Transparent"/>
         </Grid>
-        <Grid  Grid.Row="2">
+
+        <Grid Grid.Row="2" Background="Goldenrod" Grid.ColumnSpan="2">
+            <TextBox x:Name="txtCalculation" TextAlignment="Right" HorizontalAlignment="Stretch"   FontSize="40"  Background="Transparent" TextChanged="txtCalculation_TextChanged" />
+        </Grid>
+        <Grid  Grid.Row="3" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width ="*"/>
                 <ColumnDefinition Width ="*"/>
